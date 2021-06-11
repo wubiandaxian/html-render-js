@@ -1,0 +1,14 @@
+.box{
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    position: relative;
+    border: 1px solid #000;
+    overflow: hidden;
+
+.radio-label-1 {
+    color : red;
+}
+.radio-label-2 {
+    color: aqua;
+}

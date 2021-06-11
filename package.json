@@ -1,0 +1,24 @@
+{
+  "name": "render-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev rollup -wc",
+    "build": "cross-env NODE_ENV=production rollup -c"
+  },
+  "author": "wubian",
+  "license": "MIT",
+  "dependencies": {
+    "rollup": "^2.51.2",
+    "rollup-plugin-babel": "^4.4.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  }
+}

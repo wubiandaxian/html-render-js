@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="box">
+    </div>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="dist/main.js"></script>
+<script>
+    const radioParams = {
+        title: '第一个title',
+        type: 'radio',
+        name: 'sex',
+        className: 'radio-clsss',
+        list: [
+            { value:'男', class: 'test', label:'男',  className: 'radio-1 hojj'},
+            { value:'女', class: 'test', label:'女', id:"my-id2", className: 'radio-2'},
+            { value:'你猜', class: 'test', label:'哈哈', id:"my-id3"},
+        ]
+    }
+    const radio2Params = {
+        title: '第二个title',
+        type: 'radio',
+        name: 'sex',
+        className: 'radio-clsss',
+        list: [
+            { value:'10', class: 'test', label:'10',  className: 'radio-1 hojj'},
+            { value:'8', class: 'test', label:'8', className: 'radio-2'},
+            { value:'5', class: 'test', label:'5'},
+        ]
+    }
+
+    const arr = [radioParams, radio2Params]
+
+    //const radio = HtmlRender.render(radioParams)
+    const res = HtmlRender.render(arr)
+    console.log(res);
+    $('.box').append(res.join(''))
+
+</script>
+</html>
