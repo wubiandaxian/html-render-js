@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Example</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
@@ -37,7 +37,38 @@
         ]
     }
 
-    const arr = [radioParams, radio2Params]
+    const checkboxParams = {
+        title: '第三个title',
+        type: 'checkbox',
+        name: 'hobby',
+        className: 'checkbox-clsss',
+        list: [
+            { value:'10', class: 'test', label:'10',  className: 'checkbox-1 hojj'},
+            { value:'8', class: 'test', label:'8', className: 'checkbox-2'},
+            { value:'5', class: 'test', label:'5'},
+        ]
+    }
+
+    const inputParams = {
+        //title: '第三个title',
+        //label: '第三个label',
+        type: 'input',
+        //name: 'name',
+        id: 'name',
+        value: '',
+        className: 'input-clsss',
+    }
+
+    const textareaParams = {
+        title: '简介',
+        type: 'textarea',
+        name: 'desc',
+        id: '',
+        value: '默认简介……',
+        className: 'textarea-clsss',
+    }
+
+    const arr = [radioParams, radio2Params, checkboxParams, inputParams, textareaParams]
 
     //const radio = HtmlRender.render(radioParams)
     const res = HtmlRender.render(arr)
