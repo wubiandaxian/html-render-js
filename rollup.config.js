@@ -1,7 +1,7 @@
-import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import { uglify } from 'rollup-plugin-uglify';
+import babel from '@rollup/plugin-babel'
+import resolve from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
+import { uglify } from 'rollup-plugin-uglify'
 import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
 
@@ -22,9 +22,10 @@ export default {
         commonjs(),
         babel({
             exclude: 'node_modules/**',
+            babelHelpers: 'bundled'
         }),
         uglify(),
-        serve({
+        dev && serve({
             port: 4000,
             path: '/index.html',
         }),

@@ -29,8 +29,7 @@ class Radio {
         str += `<div class="render-html-continer">`
 
         list.forEach((item, index) => {
-            str +=  `
-                <div class="radio-box radio-box-${index+1}">
+            str +=  `<div class="radio-box radio-box-${index+1}">
                     <input 
                         type="radio" 
                         ${name ? 'name="'+name+'"' :'' } 

@@ -19,8 +19,7 @@ class Checkbox {
         str += `<div class="render-html-continer">`
 
         list.forEach((item, index) => {
-            str +=  `
-                <div class="checkbox-box checkbox-box-${index+1}">
+            str +=  `<div class="checkbox-box checkbox-box-${index+1}">
                     <input 
                         type="checkbox" 
                         ${name ? 'name="'+name+'"' :'' } 

@@ -30,7 +30,6 @@ class Input {
                     id="${id ? id : ''}" 
                     class="${className || ''}"
                 / ">
-                
             </div>`
 
         str += '</div></div>'
