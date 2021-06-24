@@ -9,12 +9,17 @@ const dev = process.env.NODE_ENV == 'dev'
 
 export default {
     input: 'src/index.js',
-    output: {
-        file: 'dist/main.js',
-        format: 'iife',
+    output: [{
+        file: 'dist/index.umd.js',
+        format: 'umd',
         name: 'HtmlRender',
         sourcemap: dev && true,
-    },
+    }, {
+        file: 'dist/index.esm.js',
+        format: 'esm',
+        name: 'HtmlRender',
+        sourcemap: dev && true,
+    }],
     plugins: [
         resolve({
             browser: true,
