@@ -1,5 +1,7 @@
 import Factory from './factory'
 
+window.seed = 1
+
 const params = {
     type: 'radio',
     name: 'sex',

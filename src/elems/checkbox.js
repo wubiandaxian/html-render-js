@@ -19,15 +19,15 @@ class Checkbox {
         str += `<div class="render-html-continer">`
 
         list.forEach((item, index) => {
-            str +=  `<div class="checkbox-box checkbox-box-${index+1}">
+            str +=  `<div class="checkbox-box checkbox-box-${++seed}">
                     <input 
                         type="checkbox" 
                         ${name ? 'name="'+name+'"' :'' } 
                         value="${item.value}" 
-                        id="${item.id ? item.id : "checkbox-"+(index+1)}" 
+                        id="${item.id ? item.id : "checkbox-"+(seed)}" 
                         ${item.className ? 'class="'+item.className+'"' :'' } 
                     / ">
-                    <label for="checkbox-${index+1}" class="checkbox-label-${index+1}">
+                    <label for="${item.id ? item.id : "checkbox-"+(seed)}" class="checkbox-label-${seed}">
                         ${item.label}
                     </label>
                 </div>`

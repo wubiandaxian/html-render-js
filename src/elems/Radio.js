@@ -11,9 +11,6 @@ class Radio {
     constructor(params) {
         this.params = params
     }
-
-   
-
     create = () => {
         const {title, name, className, list} = this.params
         if ( list.length ==0 ) {
@@ -29,15 +26,15 @@ class Radio {
         str += `<div class="render-html-continer">`
 
         list.forEach((item, index) => {
-            str +=  `<div class="radio-box radio-box-${index+1}">
+            str +=  `<div class="radio-box radio-box-${++seed}">
                     <input 
                         type="radio" 
                         ${name ? 'name="'+name+'"' :'' } 
                         value="${item.value}" 
-                        id="${item.id ? item.id : "radio-"+(index+1)}" 
+                        id="${item.id ? item.id : "radio-"+(seed)}" 
                         ${item.className ? 'class="'+item.className+'"' :'' } 
                     / ">
-                    <label for="radio-${index+1}" class="radio-label-${index+1}">
+                    <label for="${item.id ? item.id : "radio-"+(seed)}" class="radio-label-${seed}">
                         ${item.label}
                     </label>
                 </div>`
