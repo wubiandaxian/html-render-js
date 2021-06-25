@@ -25,17 +25,6 @@
             { value:'你猜', class: 'test', label:'哈哈', id:"my-id3"},
         ]
     }
-    const radio2Params = {
-        title: '第二个title',
-        type: 'radio',
-        name: 'age',
-        className: 'radio-clsss',
-        list: [
-            { value:'10', class: 'test', label:'10',  className: 'radio-1 hojj'},
-            { value:'8', class: 'test', label:'8', className: 'radio-2'},
-            { value:'5', class: 'test', label:'5'},
-        ]
-    }
 
     const checkboxParams = {
         title: '第三个title',
@@ -69,8 +58,6 @@
     }
 
     const arr = [radioParams, radio2Params, checkboxParams, inputParams, textareaParams]
-
-    //const radio = HtmlRender.render(radioParams)
     const res = HtmlRender.render(arr)
     console.log(res);
     $('.box').append(res.join(''))
