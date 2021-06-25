@@ -7,7 +7,7 @@ Radio, Checkbox, Input, Textarea
 #### Demo
 
 ```javascript
-	const radioParams = {
+const radioParams = {
         title: '第一个title',
         type: 'radio',
         name: 'sex',
