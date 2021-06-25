@@ -4,6 +4,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import { uglify } from 'rollup-plugin-uglify'
 import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
+import clear from 'rollup-plugin-clear'
 
 const dev = process.env.NODE_ENV == 'dev'
 
@@ -21,6 +22,9 @@ export default {
         sourcemap: dev && true,
     }],
     plugins: [
+        clear({
+            targets: ['dist']
+        }),
         resolve({
             browser: true,
         }),
