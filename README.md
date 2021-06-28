@@ -1,4 +1,4 @@
-中文 | [English](https://github.com/wubiandaxian/html-render-js/README.md)
+中文 | [English](https://github.com/wubiandaxian/html-render-js/blob/master/README_en.md)
 
 
 
