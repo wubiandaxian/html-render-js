@@ -1,25 +1,27 @@
-中文 | [English](https://github.com/wubiandaxian/html-render-js/README.md)
+[中文](https://github.com/wubiandaxian/html-render-js/blob/master/README.md) | English
 
 
 
 # html-render-js
 
-利用JS生成常用的一些html元素
+Create html element with js
 
-#### 支持列表
-Radio, Checkbox, Input, Textarea
 
-#### 安装
 
-一、使用Npm
+#### Support list
+Radio,  Checkbox,  Input,  Textarea
+
+
+
+#### Install
 
 ```
 npm i render-html-js --save
 ```
 
-二、直接引入dist文件下中的 index.umd.js文件
 
-#### 例子
+
+#### Example
 
 ```javascript
     const radioParams = {
